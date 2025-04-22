@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #f5f5f5;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.therapycenter.controller.PatientController">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #f5f5f5;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.therapycenter.controller.PatientController">
     <children>
         <VBox prefHeight="600.0" prefWidth="800.0" spacing="20.0">
             <padding>
@@ -22,13 +22,13 @@
                 <!-- Header -->
                 <Label text="Patient" textFill="#2c3e50">
                     <font>
-                        <Font name="System Bold" size="18.0" />
+                        <Font name="System Bold" size="20.0" />
                     </font>
                     <padding>
                         <Insets bottom="5.0" />
                     </padding>
                     <graphic>
-                        <HBox prefHeight="2.0" prefWidth="80.0" style="-fx-background-color: #3498db;" />
+                        <HBox prefHeight="6.0" prefWidth="80.0" style="-fx-background-color: #3498db;" />
                     </graphic>
                 </Label>
 
@@ -41,7 +41,7 @@
                                     <children>
                                         <Label prefWidth="80.0" text="ID" textFill="#2c3e50">
                                             <font>
-                                                <Font name="System Bold" size="12.0" />
+                                                <Font name="System Bold" size="14.0" />
                                             </font>
                                         </Label>
                                         <Label fx:id="lblPatientId" text="ID" textFill="#2c3e50">
@@ -55,7 +55,7 @@
                                     <children>
                                         <Label prefWidth="80.0" text="Contact:" textFill="#2c3e50">
                                             <font>
-                                                <Font name="System Bold" size="12.0" />
+                                                <Font name="System Bold" size="14.0" />
                                             </font>
                                         </Label>
                                         <TextField fx:id="txtContact" prefHeight="30.0" prefWidth="220.0" promptText="Enter contact number" />
@@ -65,7 +65,7 @@
                                     <children>
                                         <Label prefWidth="80.0" text="Gender:" textFill="#2c3e50">
                                             <font>
-                                                <Font name="System Bold" size="12.0" />
+                                                <Font name="System Bold" size="14.0" />
                                             </font>
                                         </Label>
                                         <ComboBox fx:id="cmbGender" prefHeight="30.0" prefWidth="220.0" promptText="Select gender" />
@@ -79,7 +79,7 @@
                                     <children>
                                         <Label prefWidth="80.0" text="Name:" textFill="#2c3e50">
                                             <font>
-                                                <Font name="System Bold" size="12.0" />
+                                                <Font name="System Bold" size="14.0" />
                                             </font>
                                         </Label>
                                         <TextField fx:id="txtName" prefHeight="30.0" prefWidth="220.0" promptText="Enter patient name" />
@@ -89,7 +89,7 @@
                                     <children>
                                         <Label prefWidth="80.0" text="Reg. Date" textFill="#2c3e50">
                                             <font>
-                                                <Font name="System Bold" size="12.0" />
+                                                <Font name="System Bold" size="14.0" />
                                             </font>
                                         </Label>
                               <Label fx:id="dpRegDate" />
@@ -141,13 +141,13 @@
                 </Label>
 
                 <!-- Patient Records Table -->
-                <TableView fx:id="tblPatients" onMouseClicked="#petientSelectOnAction" prefHeight="290.0" prefWidth="740.0" VBox.vgrow="ALWAYS">
+                <TableView fx:id="tblPatients" onMouseClicked="#petientSelectOnAction" prefHeight="286.0" prefWidth="740.0" stylesheets="@../style/table.css" VBox.vgrow="ALWAYS">
                     <columns>
                         <TableColumn fx:id="colId" prefWidth="100.0" text="ID" />
                         <TableColumn fx:id="colName" prefWidth="200.0" text="Name" />
                         <TableColumn fx:id="colContact" prefWidth="150.0" text="Contact" />
                         <TableColumn fx:id="colGender" prefWidth="100.0" text="Gender" />
-                        <TableColumn fx:id="colRegDate" prefWidth="150.0" text="Reg. Date" />
+                        <TableColumn fx:id="colRegDate" prefWidth="187.8260998419786" text="Reg. Date" />
                     </columns>
                     <VBox.margin>
                         <Insets />
