@@ -11,15 +11,15 @@
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.therapycenter.controller.ReceptionistDashController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.therapycenter.controller.ReceptionistDashController">
    <children>
-      <VBox prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: #2c3e50;">
+      <VBox prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: #1a2530;">
          <children>
             <HBox alignment="CENTER" prefHeight="70.0" style="-fx-background-color: #1a2530;">
                <children>
-                  <Label text="Therapy Center" textFill="WHITE">
+                  <Label text="Therapy Center" textFill="#009432">
                      <font>
-                        <Font name="System Bold" size="16.0" />
+                        <Font name="System Bold" size="20.0" />
                      </font>
                   </Label>
                </children>
@@ -29,57 +29,57 @@
                   <Insets top="10.0" />
                </padding>
                <children>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#navDash" prefHeight="45.0" style="-fx-background-color: #34495e; -fx-border-width: 0 0 0 5; -fx-border-color: #4a6bff;" text="Dashboard" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#navDash" prefHeight="45.0" prefWidth="215.0" style="-fx-background-color: #1e293c; -fx-border-width: 0 0 0 5; -fx-border-color: #4a6bff;" text="Dashboard" textFill="WHITE">
                      <font>
-                        <Font name="System Bold" size="12.0" />
+                        <Font name="System Bold" size="14.0" />
                      </font>
                      <padding>
                         <Insets left="20.0" />
                      </padding>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#navAppoinments" prefHeight="45.0" style="-fx-background-color: transparent;" text="Appointments" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#navAppoinments" prefHeight="45.0" style="-fx-background-color: #1e293c;" text="Appointments" textFill="WHITE">
                      <font>
-                        <Font size="12.0" />
+                        <Font name="System Bold" size="14.0" />
                      </font>
                      <padding>
                         <Insets left="20.0" />
                      </padding>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#navPatitnt" prefHeight="45.0" style="-fx-background-color: transparent;" text="Patients" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#navPatitnt" prefHeight="45.0" style="-fx-background-color: #1e293c;" text="Patients" textFill="WHITE">
                      <font>
-                        <Font size="12.0" />
+                        <Font name="System Bold" size="14.0" />
                      </font>
                      <padding>
                         <Insets left="20.0" />
                      </padding>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#navTherapist" prefHeight="45.0" style="-fx-background-color: transparent;" text="Therapists" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#navTherapist" prefHeight="45.0" style="-fx-background-color: #1e293c;" text="Therapists" textFill="WHITE">
                      <font>
-                        <Font size="12.0" />
+                        <Font name="System Bold" size="14.0" />
                      </font>
                      <padding>
                         <Insets left="20.0" />
                      </padding>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#navSessions" prefHeight="45.0" style="-fx-background-color: transparent;" text="Sessions" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#navSessions" prefHeight="45.0" style="-fx-background-color: #1e293c;" text="Sessions" textFill="WHITE">
                      <font>
-                        <Font size="12.0" />
+                        <Font name="System Bold" size="14.0" />
                      </font>
                      <padding>
                         <Insets left="20.0" />
                      </padding>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#navBilling" prefHeight="45.0" style="-fx-background-color: transparent;" text="Billing" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#navBilling" prefHeight="45.0" style="-fx-background-color: #1e293c;" text="Billing" textFill="WHITE">
                      <font>
-                        <Font size="12.0" />
+                        <Font name="System Bold" size="14.0" />
                      </font>
                      <padding>
                         <Insets left="20.0" />
                      </padding>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#navReports" prefHeight="45.0" style="-fx-background-color: transparent;" text="Reports" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" graphicTextGap="15.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#navReports" prefHeight="45.0" style="-fx-background-color: #1e293c;" text="Reports" textFill="WHITE">
                      <font>
-                        <Font size="12.0" />
+                        <Font name="System Bold" size="14.0" />
                      </font>
                      <padding>
                         <Insets left="20.0" />
@@ -87,19 +87,19 @@
                   </Button>
                </children>
             </VBox>
-            <HBox alignment="CENTER_LEFT" prefHeight="50.0" style="-fx-background-color: #1a2530;">
+            <HBox alignment="CENTER_LEFT" prefHeight="50.0" style="-fx-background-color: #1e293c;">
                <children>
                   <Region prefHeight="50.0" prefWidth="15.0" />
                   <VBox>
                      <children>
                         <Label text="Receptionist User" textFill="WHITE">
                            <font>
-                              <Font name="System Bold" size="12.0" />
+                              <Font name="System Bold" size="11.0" />
                            </font>
                         </Label>
-                        <Label text="Logout" textFill="#4a6bff">
+                        <Label text="Logout" textFill="#009432">
                            <font>
-                              <Font size="10.0" />
+                              <Font size="14.0" />
                            </font>
                         </Label>
                      </children>
