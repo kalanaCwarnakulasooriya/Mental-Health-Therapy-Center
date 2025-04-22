@@ -28,7 +28,7 @@
                         <Insets bottom="5.0" />
                     </padding>
                     <graphic>
-                        <HBox prefHeight="6.0" prefWidth="80.0" style="-fx-background-color: #3498db;" />
+                        <HBox prefHeight="8.0" prefWidth="80.0" style="-fx-background-color: #009432;" />
                     </graphic>
                 </Label>
 
