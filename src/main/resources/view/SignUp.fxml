@@ -7,6 +7,8 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
@@ -143,5 +145,10 @@
             </HBox>
          </children>
       </VBox>
+      <ImageView fitHeight="498.0" fitWidth="481.0" layoutX="484.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/create-account-illustration-vector-removebg-preview%20(1).png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
