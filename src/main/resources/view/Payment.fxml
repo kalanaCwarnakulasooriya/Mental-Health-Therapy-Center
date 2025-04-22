@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #f5f5f5;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.therapycenter.controller.PaymentController">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #f5f5f5;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.therapycenter.controller.PaymentController">
     <children>
         <VBox layoutX="1.0" prefHeight="600.0" prefWidth="800.0" spacing="20.0">
             <padding>
@@ -23,13 +23,13 @@
                 <!-- Header -->
                 <Label text="Payment &amp; Invoice Management" textFill="#2c3e50">
                     <font>
-                        <Font name="System Bold" size="18.0" />
+                        <Font name="System Bold" size="20.0" />
                     </font>
                     <padding>
                         <Insets bottom="5.0" />
                     </padding>
                     <graphic>
-                        <HBox prefHeight="2.0" prefWidth="80.0" style="-fx-background-color: #3498db;" />
+                        <HBox prefHeight="6.0" prefWidth="80.0" style="-fx-background-color: #3498db;" />
                     </graphic>
                 </Label>
 
@@ -42,7 +42,7 @@
                                     <children>
                                         <Label prefWidth="90.0" text="Payment ID:" textFill="#2c3e50">
                                             <font>
-                                                <Font name="System Bold" size="12.0" />
+                                                <Font name="System Bold" size="14.0" />
                                             </font>
                                         </Label>
                                         <Label fx:id="lblPaymentId" text="Automatic" textFill="#2c3e50">
@@ -56,7 +56,7 @@
                                     <children>
                                         <Label prefWidth="90.0" text="Date:" textFill="#2c3e50">
                                             <font>
-                                                <Font name="System Bold" size="12.0" />
+                                                <Font name="System Bold" size="14.0" />
                                             </font>
                                         </Label>
                                         <DatePicker fx:id="datePickerPayment" prefHeight="30.0" prefWidth="220.0" />
@@ -66,7 +66,7 @@
                                     <children>
                                         <Label prefWidth="90.0" text="Amount:" textFill="#2c3e50">
                                             <font>
-                                                <Font name="System Bold" size="12.0" />
+                                                <Font name="System Bold" size="14.0" />
                                             </font>
                                         </Label>
                                         <TextField fx:id="txtAmount" prefHeight="30.0" prefWidth="220.0" promptText="Enter payment amount" />
@@ -80,7 +80,7 @@
                                     <children>
                                         <Label prefWidth="90.0" text="Patient:" textFill="#2c3e50">
                                             <font>
-                                                <Font name="System Bold" size="12.0" />
+                                                <Font name="System Bold" size="14.0" />
                                             </font>
                                         </Label>
                                         <ChoiceBox fx:id="selectPatient" prefHeight="30.0" prefWidth="220.0" />
@@ -90,7 +90,7 @@
                                     <children>
                                         <Label prefWidth="90.0" text="Session:" textFill="#2c3e50">
                                             <font>
-                                                <Font name="System Bold" size="12.0" />
+                                                <Font name="System Bold" size="14.0" />
                                             </font>
                                         </Label>
                                         <ChoiceBox fx:id="selectSession" prefHeight="30.0" prefWidth="220.0" />
@@ -138,7 +138,7 @@
                 </Label>
 
                 <!-- Payment Records Table -->
-                <TableView fx:id="tblPayments" onMouseClicked="#paymentSelectOnAction" prefHeight="290.0" prefWidth="740.0" VBox.vgrow="ALWAYS">
+                <TableView fx:id="tblPayments" onMouseClicked="#paymentSelectOnAction" prefHeight="290.0" prefWidth="740.0" stylesheets="@../style/table.css" VBox.vgrow="ALWAYS">
                     <columns>
                         <TableColumn fx:id="colPaymentId" prefWidth="100.0" text="Payment ID" />
                         <TableColumn fx:id="colAmount" prefWidth="144.00001525878906" text="Amount" />

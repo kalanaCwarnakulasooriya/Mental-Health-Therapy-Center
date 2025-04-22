@@ -160,7 +160,7 @@ public class TherapistController implements Initializable {
 
         ArrayList<String> programList = therapyProgramBO.getProgramList();
         System.out.println(programList);
-        specializationChoice.getItems().addAll(programList);
+        specializationChoice.getItems().addAll("Psychologist", "Counsellor", "Psychiatrist");
 
         colId.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getId()));
         colName.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getName()));
