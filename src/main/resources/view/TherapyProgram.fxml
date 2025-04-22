@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #f5f5f5;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.therapycenter.controller.TherapyProgramController">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #f5f5f5;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.therapycenter.controller.TherapyProgramController">
     <children>
         <VBox prefHeight="600.0" prefWidth="800.0" spacing="20.0">
             <padding>
@@ -28,7 +28,7 @@
                         <Insets bottom="5.0" />
                     </padding>
                     <graphic>
-                        <HBox prefHeight="2.0" prefWidth="80.0" style="-fx-background-color: #3498db;" />
+                        <HBox prefHeight="8.0" prefWidth="80.0" style="-fx-background-color: #009432;" />
                     </graphic>
                 </Label>
 
@@ -41,7 +41,7 @@
                                     <children>
                                         <Label prefWidth="80.0" text="Program ID" textFill="#2c3e50">
                                             <font>
-                                                <Font name="System Bold" size="12.0" />
+                                                <Font name="System Bold" size="14.0" />
                                             </font>
                                         </Label>
                                         <Label fx:id="lblProgramId" text="ID" textFill="#2c3e50">
@@ -55,7 +55,7 @@
                                     <children>
                                         <Label prefWidth="80.0" text="Duration:" textFill="#2c3e50">
                                             <font>
-                                                <Font name="System Bold" size="12.0" />
+                                                <Font name="System Bold" size="14.0" />
                                             </font>
                                         </Label>
                                         <TextField fx:id="txtDuration" prefHeight="25.0" prefWidth="182.0" promptText="Enter program duration" />
@@ -66,7 +66,7 @@
                                     <children>
                                         <Label prefWidth="80.0" text="Fee:" textFill="#2c3e50">
                                             <font>
-                                                <Font name="System Bold" size="12.0" />
+                                                <Font name="System Bold" size="14.0" />
                                             </font>
                                         </Label>
                                         <TextField fx:id="txtFee" prefHeight="30.0" prefWidth="220.0" promptText="Enter program fee" />
@@ -80,7 +80,7 @@
                                     <children>
                                         <Label prefWidth="80.0" text="Name:" textFill="#2c3e50">
                                             <font>
-                                                <Font name="System Bold" size="12.0" />
+                                                <Font name="System Bold" size="14.0" />
                                             </font>
                                         </Label>
                                         <TextField fx:id="txtName" prefHeight="30.0" prefWidth="220.0" promptText="Enter program name" />
@@ -133,7 +133,7 @@
                 </Label>
 
                 <!-- Therapy Program Records Table -->
-                <TableView fx:id="tblTherapyPrograms" onMouseClicked="#therapyProgramSelectOnAction" prefHeight="290.0" prefWidth="740.0" VBox.vgrow="ALWAYS">
+                <TableView fx:id="tblTherapyPrograms" onMouseClicked="#therapyProgramSelectOnAction" prefHeight="290.0" prefWidth="740.0" stylesheets="@../style/table.css" VBox.vgrow="ALWAYS">
                     <columns>
                         <TableColumn fx:id="colProgramId" prefWidth="100.0" text="Program ID" />
                         <TableColumn fx:id="colName" prefWidth="277.3333282470703" text="Name" />
