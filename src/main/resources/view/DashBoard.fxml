@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0" spacing="30.0" style="-fx-background-color: #f5f5f5;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.therapycenter.controller.DashBoardController">
+   <padding>
+      <Insets bottom="30.0" left="30.0" right="30.0" top="40.0" />
+   </padding>
+   <children>
+      <Label text="Welcome to Mental Health Therapy Center" textFill="#2c3e50">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" spacing="20.0">
+         <children>
+            <VBox alignment="CENTER" minHeight="120.0" minWidth="170.0" style="-fx-background-color: white; -fx-background-radius: 8;">
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <children>
+                  <Label fx:id="therapistsCount" text="0" textFill="#3498db">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label text="Therapists" textFill="#7f8c8d">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow height="10.0" radius="4.5" width="10.0">
+                     <color>
+                        <Color opacity="0.1" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </VBox>
+            <VBox alignment="CENTER" minHeight="120.0" minWidth="170.0" style="-fx-background-color: white; -fx-background-radius: 8;">
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <children>
+                  <Label fx:id="patientsCount" text="0" textFill="#3498db">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label text="Patients" textFill="#7f8c8d">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow height="10.0" radius="4.5" width="10.0">
+                     <color>
+                        <Color opacity="0.1" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </VBox>
+            <VBox alignment="CENTER" minHeight="120.0" minWidth="170.0" style="-fx-background-color: white; -fx-background-radius: 8;">
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <children>
+                  <Label fx:id="programsCount" text="0" textFill="#3498db">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label text="Programs" textFill="#7f8c8d">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow height="10.0" radius="4.5" width="10.0">
+                     <color>
+                        <Color opacity="0.1" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </VBox>
+            <VBox alignment="CENTER" minHeight="120.0" minWidth="170.0" style="-fx-background-color: white; -fx-background-radius: 8;">
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <children>
+                  <Label fx:id="sessionsCount" text="0" textFill="#3498db">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label text="Sessions Today" textFill="#7f8c8d">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow height="10.0" radius="4.5" width="10.0">
+                     <color>
+                        <Color opacity="0.1" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>
