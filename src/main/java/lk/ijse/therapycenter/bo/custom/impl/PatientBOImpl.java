@@ -12,7 +12,6 @@ import java.util.List;
 import java.util.Optional;
 
 public class PatientBOImpl implements PatientBO {
-
     private final PatientDAOImpl patientDAO = (PatientDAOImpl) DAOFactory.getInstance().getDAO(DAOFactory.DAOType.PATIENT);
 
     @Override
