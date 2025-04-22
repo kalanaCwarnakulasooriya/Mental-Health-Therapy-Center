@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #f5f5f5;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.therapycenter.controller.TherapistController">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #f5f5f5;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.therapycenter.controller.TherapistController">
     <children>
         <VBox prefHeight="600.0" prefWidth="800.0" spacing="20.0">
             <padding>
@@ -22,13 +22,13 @@
                 <!-- Header -->
                 <Label text="Therapist" textFill="#2c3e50">
                     <font>
-                        <Font name="System Bold" size="18.0" />
+                        <Font name="System Bold" size="20.0" />
                     </font>
                     <padding>
                         <Insets bottom="5.0" />
                     </padding>
                     <graphic>
-                        <HBox prefHeight="2.0" prefWidth="80.0" style="-fx-background-color: #3498db;" />
+                        <HBox prefHeight="8.0" prefWidth="80.0" style="-fx-background-color: #009432;" />
                     </graphic>
                 </Label>
 
@@ -41,7 +41,7 @@
                                     <children>
                                         <Label prefWidth="80.0" text="ID" textFill="#2c3e50">
                                             <font>
-                                                <Font name="System Bold" size="12.0" />
+                                                <Font name="System Bold" size="14.0" />
                                             </font>
                                         </Label>
                                         <Label fx:id="lblTherapistId" text="ID" textFill="#2c3e50">
@@ -51,11 +51,11 @@
                                         </Label>
                                     </children>
                                 </HBox>
-                                <HBox alignment="CENTER_LEFT" spacing="10.0">
+                                <HBox alignment="CENTER_LEFT" prefHeight="27.0" prefWidth="296.0" spacing="10.0">
                                     <children>
-                                        <Label prefHeight="17.0" prefWidth="82.0" text="Specialization:" textFill="#2c3e50">
+                                        <Label prefHeight="20.0" prefWidth="110.0" text="Specialization:" textFill="#2c3e50">
                                             <font>
-                                                <Font name="System Bold" size="12.0" />
+                                                <Font name="System Bold" size="14.0" />
                                             </font>
                                         </Label>
                               <ChoiceBox fx:id="specializationChoice" prefWidth="150.0" />
@@ -69,7 +69,7 @@
                                     <children>
                                         <Label prefWidth="80.0" text="Name:" textFill="#2c3e50">
                                             <font>
-                                                <Font name="System Bold" size="12.0" />
+                                                <Font name="System Bold" size="14.0" />
                                             </font>
                                         </Label>
                                         <TextField fx:id="txtName" prefHeight="30.0" prefWidth="220.0" promptText="Enter therapist name" />
@@ -94,7 +94,7 @@
                                 <Font name="System Bold" size="12.0" />
                             </font>
                         </Button>
-                        <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#deleteTherapist" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #e74c3c; -x-text-fill: white;" text="Delete">
+                        <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#deleteTherapist" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #e74c3c; -x-text-fill: white;" text="Delete" textFill="WHITE">
                             <font>
                                 <Font name="System Bold" size="12.0" />
                             </font>
@@ -121,11 +121,11 @@
                 </Label>
 
                 <!-- Therapist Records Table -->
-                <TableView fx:id="tblTherapists" onMouseClicked="#therapistSelectOnAction" prefHeight="290.0" prefWidth="740.0" VBox.vgrow="ALWAYS">
+                <TableView fx:id="tblTherapists" onMouseClicked="#therapistSelectOnAction" prefHeight="290.0" prefWidth="740.0" stylesheets="@../style/table.css" VBox.vgrow="ALWAYS">
                     <columns>
-                        <TableColumn fx:id="colId" prefWidth="100.0" text="ID" />
-                        <TableColumn fx:id="colName" prefWidth="250.0" text="Name" />
-                        <TableColumn fx:id="colSpecialization" prefWidth="350.0" text="Specialization" />
+                        <TableColumn fx:id="colId" prefWidth="141.07825601100922" text="ID" />
+                        <TableColumn fx:id="colName" prefWidth="274.6434783935547" text="Name" />
+                        <TableColumn fx:id="colSpecialization" prefWidth="319.72174072265625" text="Specialization" />
                     </columns>
                     <VBox.margin>
                         <Insets />
