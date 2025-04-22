@@ -60,9 +60,17 @@
                   <Font name="Arial Bold" size="28.0" />
                </font>
                <VBox.margin>
-                  <Insets bottom="10.0" />
+                  <Insets bottom="-10.0" />
                </VBox.margin>
             </Text>
+            <Label text="Hey enter your details to create your account">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="-20.0" />
+               </VBox.margin>
+            </Label>
             <Label fx:id="lblError" text=" " textFill="RED" />
 
             <HBox alignment="CENTER_LEFT">
@@ -71,19 +79,19 @@
                </VBox.margin>
             </HBox>
 
-            <TextField fx:id="txtUserName" prefHeight="40.0" prefWidth="250.0" promptText="Username" style="-fx-background-radius: 5; -fx-border-color: #e0e0e0; -fx-border-radius: 5;">
+            <TextField fx:id="txtUserName" prefHeight="40.0" prefWidth="250.0" promptText="Username" style="-fx-background-radius: 5; -fx-border-color: #e0e0e0; -fx-border-radius: 5; -fx-border-color: black;">
                <font>
                   <Font size="14.0" />
                </font>
             </TextField>
 
-            <PasswordField fx:id="txtPassword" prefHeight="40.0" prefWidth="250.0" promptText="Password" style="-fx-background-radius: 5; -fx-border-color: #e0e0e0; -fx-border-radius: 5;">
+            <PasswordField fx:id="txtPassword" prefHeight="40.0" prefWidth="250.0" promptText="Password" style="-fx-background-radius: 5; -fx-border-color: #e0e0e0; -fx-border-radius: 5; -fx-border-color: black;">
                <font>
                   <Font size="14.0" />
                </font>
             </PasswordField>
 
-            <PasswordField fx:id="txtConfirmPassword" prefHeight="40.0" prefWidth="250.0" promptText="Confirm Password" style="-fx-background-radius: 5; -fx-border-color: #e0e0e0; -fx-border-radius: 5;">
+            <PasswordField fx:id="txtConfirmPassword" prefHeight="40.0" prefWidth="250.0" promptText="Confirm Password" style="-fx-background-radius: 5; -fx-border-color: #e0e0e0; -fx-border-radius: 5; -fx-border-color: black;">
                <font>
                   <Font size="14.0" />
                </font>
@@ -100,7 +108,7 @@
                </children>
             </HBox>
 
-            <Button fx:id="btSignUp" mnemonicParsing="false" onAction="#navLogInPage" prefHeight="31.0" prefWidth="163.0" style="-fx-background-color: #4a6bff; -fx-background-radius: 5;" text="Sign Up" textFill="WHITE">
+            <Button fx:id="btSignUp" mnemonicParsing="false" onAction="#navLogInPage" prefHeight="31.0" prefWidth="163.0" style="-fx-background-color: #009432; -fx-background-radius: 10;" text="Sign Up" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
@@ -123,7 +131,7 @@
                         <Font name="Arial" size="14.0" />
                      </font>
                   </Text>
-                  <Text fill="#4a6bff" onMouseClicked="#navLogInPage" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-cursor: hand;" text="Sign in">
+                  <Text fill="#009432" onMouseClicked="#navLogInPage" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-cursor: hand;" text="Sign in">
                      <font>
                         <Font name="Arial Bold" size="14.0" />
                      </font>
