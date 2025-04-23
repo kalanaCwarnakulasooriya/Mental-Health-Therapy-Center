@@ -4,6 +4,7 @@ import lk.ijse.therapycenter.config.FactoryConfiguration;
 import lk.ijse.therapycenter.dao.custom.PaymentDAO;
 import lk.ijse.therapycenter.entity.Payment;
 import org.hibernate.Session;
+import org.hibernate.Transaction;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -15,8 +16,25 @@ public class PaymentDAOImpl implements PaymentDAO {
 
     @Override
     public boolean save(Payment payment) {
-        return false;
+        Transaction transaction = null;
+
+        try (Session session = FactoryConfiguration.getInstance().getSession()) {
+            transaction = session.beginTransaction();
+
+            session.persist(payment);
+
+            transaction.commit();
+            return true;
+
+        } catch (Exception e) {
+            if (transaction != null) {
+                transaction.rollback();
+            }
+            e.printStackTrace();
+            return false;
+        }
     }
+
 
     @Override
     public boolean update(Payment payment) {
