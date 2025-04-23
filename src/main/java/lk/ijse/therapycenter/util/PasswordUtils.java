@@ -3,7 +3,6 @@ package lk.ijse.therapycenter.util;
 import at.favre.lib.crypto.bcrypt.BCrypt;
 
 public class PasswordUtils {
-
     public static String hashPassword(String password) {
         BCrypt.Hasher hasher = BCrypt.withDefaults();
         return hasher.hashToString(12, password.toCharArray());
